@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.avecplaisir.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:queryHint="Rechercher une recette"
+        android:layout_marginBottom="8dp"
+        android:background="#ffeecc"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:clickable="true"
+        android:layout_gravity="right" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/nav_carrousel_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#333333"/>
+
+
+            <ImageView
+                android:id="@+id/nav_entrees_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/nav_carrousel_view"
+                android:layout_marginTop="8dp"
+                android:background="#333333"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_carrousel_view"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:text="Entrées"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_carrousel_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/entree"
+                />
+
+            <ImageView
+                android:id="@+id/nav_plats_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/nav_entrees_view"
+                android:layout_marginTop="8dp"
+                android:background="#333333"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_entrees_view"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:text="PLATS"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#FFFFFF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_entrees_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/plats"
+                />
+
+            <ImageView
+                android:id="@+id/nav_desserts_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/nav_plats_view"
+                android:layout_marginTop="8dp"
+                android:background="#333333"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_plats_view"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:text="desserts"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#FFFFFF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_plats_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/desserts"
+                />
+
+            <ImageView
+                android:id="@+id/nav_boissons_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/nav_desserts_view"
+                android:layout_marginTop="8dp"
+                android:background="#333333"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_desserts_view"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:text="boissons"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#FFFFFF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_desserts_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/boissons"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

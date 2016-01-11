@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group android:id="@+id/g1">
+        <item
+            android:id="@+id/nav_accueil"
+            android:icon="@drawable/ic_home"
+            android:title="Accueil" />
+    </group>
+    <group android:id="@+id/g2">
+        <item
+            android:id="@+id/nav_chercher"
+            android:icon="@drawable/ic_find"
+            android:title="Chercher" />
+    </group>
+    <group android:id="@+id/g3">
+        <item
+            android:id="@+id/nav_cuisine"
+            android:icon="@drawable/ic_cuisine"
+            android:title="Mode Cuisine" />
+
+    </group>
+    <group android:id="@+id/g4">
+        <item
+            android:id="@+id/nav_entrees"
+            android:icon="@drawable/ic_entree"
+            android:title="Entrées" />
+    </group>
+    <group android:id="@+id/g5">
+        <item
+            android:id="@+id/nav_plats"
+            android:icon="@drawable/ic_plats"
+            android:title="Plats" />
+    </group>
+    <group android:id="@+id/g6">
+        <item
+            android:id="@+id/nav_desserts"
+            android:icon="@drawable/ic_dessert"
+            android:title="Desserts" />
+    </group>
+    <group android:id="@+id/g7">
+        <item
+            android:id="@+id/nav_boissons"
+            android:icon="@drawable/ic_boissons"
+            android:title="Boissons" />
+    </group>
+
+</menu>
