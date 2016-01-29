@@ -58,7 +58,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="64dp"
                 android:src="@drawable/plats"
-                android:id="@+id/imageView2" />
+                android:id="@+id/imageView2"
+                android:elevation="8dp"/>
             <ImageButton
                 android:id="@+id/nav_entree_1"
                 android:layout_width="240dp"
@@ -68,7 +69,8 @@
                 android:src="@drawable/poule_img"
                 android:scaleType="fitCenter"
                 android:paddingBottom="8dp"
-                android:paddingTop="8dp"/>
+                android:paddingTop="8dp"
+                android:elevation="8dp"/>
 
             <TextView
                 android:id="@+id/textView1"
@@ -113,6 +115,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginLeft="14dp"
                 android:src="@drawable/chef"
+                android:elevation="8dp"
                 />
             <ImageView
                 android:id="@+id/nav_temps"
@@ -123,6 +126,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginLeft="16dp"
                 android:src="@drawable/clock"
+                android:elevation="8dp"
                 />
             <ImageView
                 android:id="@+id/nav_budget"
@@ -133,6 +137,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginLeft="16dp"
                 android:src="@drawable/euro"
+                android:elevation="8dp"
                 />
             <TextView
                 android:id="@+id/textView4"
@@ -224,6 +229,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginLeft="4dp"
                 android:src="@drawable/linea"
+                android:elevation="8dp"
                 />
             <ImageView
                 android:layout_width="wrap_content"
@@ -233,6 +239,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginLeft="4dp"
                 android:src="@drawable/linea"
+                android:elevation="8dp"
                 />
 
 
@@ -447,7 +454,8 @@
                 android:text="commencer"
                 android:textAllCaps="true"
                 android:background="#a75e29"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                android:elevation="8dp"/>
 
 
         </RelativeLayout>
